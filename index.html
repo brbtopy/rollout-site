@@ -1,0 +1,61 @@
+<!doctype html>
+<!-- Roll Out — public site (landing + legal). Served via GitHub Pages from
+     brbtopy/rollout-site. Contact: devs.rollout@gmail.com -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roll Out — Roadside Towing, On Demand</title>
+<meta name="description" content="Roll Out connects people who need a vehicle towed with nearby independent tow operators. Request a tow, watch it arrive, pay cash on completion.">
+<style>
+  :root { --bg:#ffffff; --text:#14151a; --muted:#5b5c66; --accent:#f59e0b; --border:#e8eaee; --surface:#f7f8fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0a0a0b; --text:#f6f6f8; --muted:#9a9aa2; --accent:#f59e0b; --border:#282830; --surface:#161618; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 22px 80px; }
+  .brand { display:flex; align-items:center; gap:12px; font-weight:700; font-size:20px; letter-spacing:.01em; }
+  .mark { width:40px; height:40px; border-radius:11px; background:var(--accent); color:#140f06;
+    display:grid; place-items:center; font-weight:800; font-size:22px; }
+  h1 { font-size: clamp(30px,6vw,44px); margin: 30px 0 10px; letter-spacing:-.02em; line-height:1.1; }
+  .lede { color:var(--muted); font-size:18px; margin:0 0 8px; max-width:36ch; }
+  .how { margin:34px 0 8px; }
+  .how h2 { font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:0 0 10px; }
+  .how p { margin:0 0 12px; }
+  .links { display:grid; gap:10px; margin:34px 0 0; }
+  .links a { display:flex; align-items:center; justify-content:space-between;
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:15px 18px; color:var(--text); text-decoration:none; font-weight:600; }
+  .links a:hover { border-color:var(--accent); }
+  .links .arrow { color:var(--accent); }
+  footer { margin-top:44px; padding-top:18px; border-top:1px solid var(--border); color:var(--muted); font-size:13px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><span class="mark">R</span> Roll Out</div>
+
+    <h1>Roadside towing, on demand.</h1>
+    <p class="lede">Get a tow truck to you when you need one — and watch it arrive.</p>
+
+    <div class="how">
+      <h2>What Roll Out is</h2>
+      <p>Roll Out is a marketplace that connects people who need a vehicle towed with nearby independent tow operators. You set your pickup and destination, get matched with a driver, and follow the truck on its way.</p>
+      <p>Tows are paid in cash directly to the driver on completion. Roll Out is the technology that makes the match and the communication — the towing itself is provided by the independent operator.</p>
+    </div>
+
+    <nav class="links" aria-label="Site">
+      <a href="./privacy.html">Privacy Policy <span class="arrow">→</span></a>
+      <a href="./terms.html">Terms of Service <span class="arrow">→</span></a>
+      <a href="./account-deletion.html">Delete your account &amp; data <span class="arrow">→</span></a>
+      <a href="mailto:devs.rollout@gmail.com">Contact support <span class="arrow">→</span></a>
+    </nav>
+
+    <footer>© <span id="y"></span> Roll Out. All rights reserved. · <a href="mailto:devs.rollout@gmail.com">devs.rollout@gmail.com</a></footer>
+  </div>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<!-- Roll Out — Privacy Policy. Served via GitHub Pages (brbtopy/rollout-site).
+     Working draft — review with counsel for Ghana. Contact: devs.rollout@gmail.com -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roll Out — Privacy Policy</title>
+<style>
+  :root { --bg:#ffffff; --text:#14151a; --muted:#5b5c66; --accent:#f59e0b; --border:#e8eaee; --surface:#f7f8fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0a0a0b; --text:#f6f6f8; --muted:#9a9aa2; --accent:#f59e0b; --border:#282830; --surface:#161618; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.02em; }
+  .mark { width:28px; height:28px; border-radius:8px; background:var(--accent); color:#140f06;
+    display:grid; place-items:center; font-weight:800; }
+  h1 { font-size: clamp(28px,5vw,38px); margin: 22px 0 6px; letter-spacing:-.02em; }
+  .eff { color:var(--muted); font-size:14px; margin:0 0 22px; }
+  .note { background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--accent);
+    border-radius:10px; padding:12px 16px; color:var(--muted); font-size:14px; margin:0 0 28px; }
+  h2 { font-size:19px; margin:30px 0 8px; letter-spacing:-.01em; }
+  p, li { color:var(--text); }
+  .muted { color:var(--muted); }
+  ul { padding-left:20px; } li { margin:5px 0; }
+  a { color:var(--accent); }
+  footer { margin-top:40px; padding-top:18px; border-top:1px solid var(--border); color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><span class="mark">R</span> Roll Out</div>
+    <h1>Privacy Policy</h1>
+    <p class="eff">Effective 19 August 2026</p>
+
+    <div class="note">Your privacy matters. This is the plain version of what we collect and why.</div>
+
+    <h2>Overview</h2>
+    <p>This Privacy Policy explains what Roll Out collects, why, and your choices. It applies to the Roll Out app and services.</p>
+
+    <h2>Information we collect</h2>
+    <ul>
+      <li><strong>Account information:</strong> your name, email, phone number, and role (rider or driver).</li>
+      <li><strong>Location information:</strong> your device location to set pickups, match you with nearby drivers, and show the truck en route.</li>
+      <li><strong>Trip information:</strong> pickup and drop-off addresses, vehicle/truck type, status, and timestamps.</li>
+      <li><strong>Driver information:</strong> for drivers, vehicle and licensing details and verification status.</li>
+      <li><strong>Device and usage information:</strong> basic app, device, and diagnostic data to keep the Service working and secure.</li>
+    </ul>
+
+    <h2>How we use your location</h2>
+    <p>We use location while you are arranging or on a trip — to place your pickup, find nearby drivers, and display live progress. We do not track your location in the background when you are not using the Service.</p>
+    <p class="muted">You can control location access in your device settings, but the core matching features need it to work.</p>
+
+    <h2>How we use information</h2>
+    <p>To provide and operate the Service, match riders and drivers, enable contact during a trip, keep accounts secure, comply with law, and improve reliability. We do not sell your personal information.</p>
+
+    <h2>How information is shared</h2>
+    <ul>
+      <li><strong>With your driver or rider:</strong> the details needed to complete the tow (such as name, approximate location, and trip route).</li>
+      <li><strong>With service providers</strong> who run the platform on our behalf — hosting and database (Supabase), maps and routing (Mapbox), driver identity verification (AWS), product analytics (PostHog), and crash and error reporting (Sentry). They may process data only to provide their service to us.</li>
+      <li><strong>For legal reasons:</strong> where required by law or to protect rights, safety, and the integrity of the Service.</li>
+    </ul>
+
+    <h2>Retention</h2>
+    <p>We keep information for as long as your account is active or as needed to provide the Service, resolve disputes, and meet legal obligations. You can request deletion of your account from the app, which removes your profile and associated records as described there.</p>
+
+    <h2>Security</h2>
+    <p>We use reasonable technical and organizational measures to protect your information. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+
+    <h2>Your choices and rights</h2>
+    <p>You can review and update your profile, manage notification preferences, control location permissions in device settings, and delete your account. Depending on where you live, you may have additional rights over your data; contact us to exercise them.</p>
+
+    <h2>Children</h2>
+    <p>The Service is not directed to children under 18, and we do not knowingly collect their information.</p>
+
+    <h2>Data deletion</h2>
+    <p>You can delete your account and associated data at any time from within the app (Profile → Personal info → Delete account), or by requesting deletion at <a href="mailto:devs.rollout@gmail.com">devs.rollout@gmail.com</a>. See our <a href="./account-deletion.html">account deletion page</a> for details.</p>
+
+    <h2>Changes and contact</h2>
+    <p>We may update this policy as the Service evolves. Material changes will be reflected here with a new effective date.</p>
+    <p>Questions or requests? Contact <a href="mailto:devs.rollout@gmail.com">devs.rollout@gmail.com</a>.</p>
+
+    <footer>© <span id="y"></span> Roll Out. All rights reserved.</footer>
+  </div>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

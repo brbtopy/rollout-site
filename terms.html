@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- Roll Out — Terms of Service. Served via GitHub Pages (brbtopy/rollout-site).
+     Mirrors the in-app Legal → Terms screen. Working draft — review with counsel.
+     Contact: devs.rollout@gmail.com -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roll Out — Terms of Service</title>
+<style>
+  :root { --bg:#ffffff; --text:#14151a; --muted:#5b5c66; --accent:#f59e0b; --border:#e8eaee; --surface:#f7f8fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0a0a0b; --text:#f6f6f8; --muted:#9a9aa2; --accent:#f59e0b; --border:#282830; --surface:#161618; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.02em; }
+  .mark { width:28px; height:28px; border-radius:8px; background:var(--accent); color:#140f06;
+    display:grid; place-items:center; font-weight:800; }
+  h1 { font-size: clamp(28px,5vw,38px); margin: 22px 0 6px; letter-spacing:-.02em; }
+  .eff { color:var(--muted); font-size:14px; margin:0 0 22px; }
+  .note { background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--accent);
+    border-radius:10px; padding:12px 16px; color:var(--muted); font-size:14px; margin:0 0 28px; }
+  h2 { font-size:19px; margin:30px 0 8px; letter-spacing:-.01em; }
+  p, li { color:var(--text); }
+  a { color:var(--accent); }
+  footer { margin-top:40px; padding-top:18px; border-top:1px solid var(--border); color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><span class="mark">R</span> Roll Out</div>
+    <h1>Terms of Service</h1>
+    <p class="eff">Effective 19 August 2026</p>
+
+    <div class="note">This is a working draft for a tow-truck marketplace and should be reviewed by counsel before you rely on it.</div>
+
+    <h2>Agreement to these terms</h2>
+    <p>These Terms of Service (“Terms”) govern your use of the Roll Out mobile application and services (the “Service”). By creating an account or using the Service, you agree to these Terms. If you do not agree, do not use the Service.</p>
+
+    <h2>What Roll Out is</h2>
+    <p>Roll Out is a technology platform that connects people who need a vehicle towed (“Riders”) with independent tow operators (“Drivers”). We are a marketplace and communications tool — we do not own tow trucks, employ Drivers, or provide towing ourselves.</p>
+    <p>The towing service is provided by the Driver, not by Roll Out. Any dispute about a tow is between the Rider and the Driver, though we will try to help where we reasonably can.</p>
+
+    <h2>Accounts and eligibility</h2>
+    <p>You must be at least 18 years old and able to form a binding contract to use the Service. You agree to give accurate information, keep your login secure, and are responsible for activity on your account.</p>
+    <p>Drivers must hold all licenses, permits, insurance, and registrations required to operate a tow vehicle in their area, and must complete any verification we require before accepting trips.</p>
+
+    <h2>Requesting and providing tows</h2>
+    <p>Riders request a tow by providing pickup and drop-off locations and a truck type. Drivers may accept or decline requests. A match does not guarantee availability, timing, or outcome.</p>
+    <p>You agree to provide accurate information about your vehicle and situation, and not to request or provide a tow that is unsafe or unlawful.</p>
+
+    <h2>Fares and payment</h2>
+    <p>Tows are currently paid in cash directly to the Driver on completion. The Driver confirms the fare with the Rider before the tow begins. Roll Out does not process payments or set prices at this time.</p>
+    <p>You are responsible for paying the agreed fare. Any tolls, storage, or additional costs are a matter between Rider and Driver unless stated otherwise.</p>
+
+    <h2>Cancellations</h2>
+    <p>Either party may cancel before pickup, subject to fairness to the other side. Please cancel as early as possible so a Driver is not dispatched unnecessarily.</p>
+
+    <h2>Acceptable use</h2>
+    <p>You agree not to misuse the Service — including harassment, fraud, unlawful activity, interfering with the platform, or attempting to access it in unauthorized ways. We may suspend or terminate accounts that break these rules.</p>
+
+    <h2>Disclaimers</h2>
+    <p>The Service is provided "as is" and "as available." To the fullest extent permitted by law, we disclaim warranties of any kind, including fitness for a particular purpose and uninterrupted or error-free operation.</p>
+
+    <h2>Limitation of liability</h2>
+    <p>To the fullest extent permitted by law, Roll Out is not liable for indirect, incidental, or consequential damages, or for the acts or omissions of Drivers or Riders. Our total liability for any claim relating to the Service is limited to the amount you paid us for it, which may be zero.</p>
+
+    <h2>Changes and termination</h2>
+    <p>We may update the Service and these Terms from time to time. Continued use after changes take effect means you accept them. You may stop using the Service at any time; we may suspend or end access where reasonable or required.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about these Terms? Reach us at <a href="mailto:devs.rollout@gmail.com">devs.rollout@gmail.com</a>.</p>
+
+    <footer>© <span id="y"></span> Roll Out. All rights reserved.</footer>
+  </div>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
