@@ -1,6 +1,6 @@
 # rollout-site
 
-Public web pages for the **Roll Out** app (a roadside-towing marketplace), served
+Public web pages for the **RollOut** app (a roadside-towing marketplace), served
 via GitHub Pages at **https://brbtopy.github.io/rollout-site/**.
 
 This repo exists so the app has publicly reachable URLs that the Google Play
