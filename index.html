@@ -7,18 +7,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RollOut — Roadside Towing, On Demand</title>
 <meta name="description" content="RollOut connects people who need a vehicle towed with nearby independent tow operators. Request a tow, watch it arrive, pay cash on completion.">
+<link rel="icon" type="image/png" href="./favicon.png">
 <style>
-  :root { --bg:#ffffff; --text:#14151a; --muted:#5b5c66; --accent:#f59e0b; --border:#e8eaee; --surface:#f7f8fa; }
+  :root { --bg:#ffffff; --text:#14151a; --muted:#5b5c66; --accent:#FFDE15; --link:#14151a; --border:#e8eaee; --surface:#f7f8fa; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg:#0a0a0b; --text:#f6f6f8; --muted:#9a9aa2; --accent:#f59e0b; --border:#282830; --surface:#161618; }
+    :root { --bg:#0a0a0b; --text:#f6f6f8; --muted:#9a9aa2; --accent:#FFDE15; --link:#FFDE15; --border:#282830; --surface:#161618; }
   }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--text);
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
   .wrap { max-width: 680px; margin: 0 auto; padding: 56px 22px 80px; }
   .brand { display:flex; align-items:center; gap:12px; font-weight:700; font-size:20px; letter-spacing:.01em; }
-  .mark { width:40px; height:40px; border-radius:11px; background:var(--accent); color:#140f06;
-    display:grid; place-items:center; font-weight:800; font-size:22px; }
+  .mark { width:40px; height:40px; display:block; }
   h1 { font-size: clamp(30px,6vw,44px); margin: 30px 0 10px; letter-spacing:-.02em; line-height:1.1; }
   .lede { color:var(--muted); font-size:18px; margin:0 0 8px; max-width:36ch; }
   .how { margin:34px 0 8px; }
@@ -28,15 +28,15 @@
   .links a { display:flex; align-items:center; justify-content:space-between;
     background:var(--surface); border:1px solid var(--border); border-radius:12px;
     padding:15px 18px; color:var(--text); text-decoration:none; font-weight:600; }
-  .links a:hover { border-color:var(--accent); }
-  .links .arrow { color:var(--accent); }
+  .links a:hover { border-color:var(--link); }
+  .links .arrow { color:var(--link); }
   footer { margin-top:44px; padding-top:18px; border-top:1px solid var(--border); color:var(--muted); font-size:13px; }
-  footer a { color:var(--accent); }
+  footer a { color:var(--link); text-decoration:underline; text-underline-offset:2px; }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="brand"><span class="mark">R</span> RollOut</div>
+    <div class="brand"><img class="mark" src="./logo.png" width="40" height="40" alt=""> RollOut</div>
 
     <h1>Roadside towing, on demand.</h1>
     <p class="lede">Get a tow truck to you when you need one — and watch it arrive.</p>

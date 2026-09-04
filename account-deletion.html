@@ -7,30 +7,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RollOut — Delete Your Account</title>
+<link rel="icon" type="image/png" href="./favicon.png">
 <style>
-  :root { --bg:#ffffff; --text:#14151a; --muted:#5b5c66; --accent:#f59e0b; --border:#e8eaee; --surface:#f7f8fa; }
+  :root { --bg:#ffffff; --text:#14151a; --muted:#5b5c66; --accent:#FFDE15; --link:#14151a; --border:#e8eaee; --surface:#f7f8fa; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg:#0a0a0b; --text:#f6f6f8; --muted:#9a9aa2; --accent:#f59e0b; --border:#282830; --surface:#161618; }
+    :root { --bg:#0a0a0b; --text:#f6f6f8; --muted:#9a9aa2; --accent:#FFDE15; --link:#FFDE15; --border:#282830; --surface:#161618; }
   }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--text);
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
   .wrap { max-width: 680px; margin: 0 auto; padding: 48px 22px 80px; }
   .brand { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.02em; }
-  .mark { width:28px; height:28px; border-radius:8px; background:var(--accent); color:#140f06;
-    display:grid; place-items:center; font-weight:800; }
+  .mark { width:28px; height:28px; display:block; }
   h1 { font-size: clamp(26px,5vw,36px); margin: 22px 0 10px; letter-spacing:-.02em; }
   .lede { color:var(--muted); font-size:16px; margin:0 0 26px; }
   h2 { font-size:19px; margin:28px 0 8px; }
   ol { padding-left:20px; } li { margin:6px 0; }
   .card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin:18px 0; }
-  a { color:var(--accent); }
+  a { color:var(--link); text-decoration:underline; text-underline-offset:2px; }
   footer { margin-top:40px; padding-top:18px; border-top:1px solid var(--border); color:var(--muted); font-size:13px; }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="brand"><span class="mark">R</span> RollOut</div>
+    <div class="brand"><img class="mark" src="./logo.png" width="28" height="28" alt=""> RollOut</div>
     <h1>Delete your account &amp; data</h1>
     <p class="lede">You can permanently delete your RollOut account and its data at any time. Here's how.</p>
 
