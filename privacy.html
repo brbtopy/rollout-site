@@ -1,6 +1,7 @@
 <!doctype html>
 <!-- RollOut — Privacy Policy. Served via GitHub Pages (brbtopy/rollout-site).
-     Working draft — review with counsel for Ghana. Contact: devs.rollout@gmail.com -->
+     Mirrors the in-app Legal → Privacy screen. Working draft — review with
+     counsel for Ghana. Contact: devs.rollout@gmail.com -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -34,7 +35,7 @@
   <div class="wrap">
     <div class="brand"><img class="mark" src="./logo.png" width="28" height="28" alt=""> RollOut</div>
     <h1>Privacy Policy</h1>
-    <p class="eff">Effective 19 August 2026</p>
+    <p class="eff">Effective 10 September 2026</p>
 
     <div class="note">Your privacy matters. This is the plain version of what we collect and why.</div>
 
@@ -43,29 +44,31 @@
 
     <h2>Information we collect</h2>
     <ul>
-      <li><strong>Account information:</strong> your name, email, phone number, and role (rider or driver).</li>
-      <li><strong>Location information:</strong> your device location to set pickups, match you with nearby drivers, and show the truck en route.</li>
+      <li><strong>Account information:</strong> your name, email, phone number, role (rider or driver), and an optional profile photo.</li>
+      <li><strong>Location information:</strong> your device location to set pickups, match you with nearby drivers, and show the truck en route. When a driver goes online, we also collect their location in the background so they keep receiving nearby jobs while the app is closed or the screen is off.</li>
       <li><strong>Trip information:</strong> pickup and drop-off addresses, vehicle/truck type, status, and timestamps.</li>
-      <li><strong>Driver information:</strong> for drivers, vehicle and licensing details and verification status.</li>
-      <li><strong>Device and usage information:</strong> basic app, device, and diagnostic data to keep the Service working and secure.</li>
+      <li><strong>Driver information:</strong> for drivers, vehicle details, photos of your driver's licence (front and back), its number and expiry, and a photo of your truck — which our team reviews by hand to approve you.</li>
+      <li><strong>Device and usage information:</strong> basic app, device, and diagnostic data, including a push notification token, to keep the Service working, send trip updates, and stay secure.</li>
     </ul>
 
     <h2>How we use your location</h2>
-    <p>We use location while you are arranging or on a trip — to place your pickup, find nearby drivers, and display live progress. We do not track your location in the background when you are not using the Service.</p>
+    <p>As a rider, we use your location only while you are arranging or on a trip — to place your pickup, find nearby drivers, and show live progress. We do not collect a rider's location in the background.</p>
+    <p>As a driver, when you choose to go online we collect your location in the background — even when the app is closed or the screen is off — so you keep receiving nearby jobs. This runs only while you are online, a standing notification shows while it is active, and it stops the moment you go offline. We ask for this permission separately and explain it in the app before it starts.</p>
     <p class="muted">You can control location access in your device settings, but the core matching features need it to work.</p>
 
     <h2>How we use information</h2>
-    <p>To provide and operate the Service, match riders and drivers, enable contact during a trip, keep accounts secure, comply with law, and improve reliability. We do not sell your personal information.</p>
+    <p>To provide and operate the Service, match riders and drivers, let a rider call their driver by phone during a trip, keep accounts secure, comply with law, and improve reliability. We do not sell your personal information.</p>
 
     <h2>How information is shared</h2>
     <ul>
-      <li><strong>With your driver or rider:</strong> the details needed to complete the tow (such as name, approximate location, and trip route).</li>
-      <li><strong>With service providers</strong> who run the platform on our behalf — hosting and database (Supabase), maps and routing (Mapbox), driver identity verification (AWS), product analytics (PostHog), and crash and error reporting (Sentry). They may process data only to provide their service to us.</li>
+      <li><strong>With your driver or rider:</strong> the details needed to complete the tow. A rider sees their driver's name, photo, and phone number (so they can call them) and the truck's live location on the way; a driver sees the pickup and drop-off to reach you.</li>
+      <li><strong>With service providers</strong> who run the platform on our behalf — for example hosting and database (Supabase), maps and routing (Mapbox), push notification delivery (Expo and Google's Firebase Cloud Messaging), and crash and error reporting (Sentry). They may process data only to provide their service to us. We review driver documents ourselves rather than sending them to an outside identity-verification service.</li>
       <li><strong>For legal reasons:</strong> where required by law or to protect rights, safety, and the integrity of the Service.</li>
     </ul>
 
     <h2>Retention</h2>
-    <p>We keep information for as long as your account is active or as needed to provide the Service, resolve disputes, and meet legal obligations. You can request deletion of your account from the app, which removes your profile and associated records as described there.</p>
+    <p>We keep information for as long as your account is active or as needed to provide the Service, resolve disputes, and meet legal obligations.</p>
+    <p>You can delete your account from the app. When you do, it is deactivated right away and scheduled for permanent deletion after 30 days — signing back in during that window restores it. After 30 days your profile and personal records are permanently erased. We may keep a de-identified record of completed tows, containing nothing that identifies you, so the other party's own history stays accurate, and we may retain limited information where the law requires it.</p>
 
     <h2>Security</h2>
     <p>We use reasonable technical and organizational measures to protect your information. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
@@ -77,7 +80,7 @@
     <p>The Service is not directed to children under 18, and we do not knowingly collect their information.</p>
 
     <h2>Data deletion</h2>
-    <p>You can delete your account and associated data at any time from within the app (Profile → Personal info → Delete account), or by requesting deletion at <a href="mailto:devs.rollout@gmail.com">devs.rollout@gmail.com</a>. See our <a href="./account-deletion.html">account deletion page</a> for details.</p>
+    <p>You can delete your account from within the app (Profile → Personal info → Delete account), or by requesting deletion at <a href="mailto:devs.rollout@gmail.com">devs.rollout@gmail.com</a>. Your account is deactivated right away and permanently deleted after 30 days, and you can restore it by signing back in during that window. See our <a href="./account-deletion.html">account deletion page</a> for details.</p>
 
     <h2>Changes and contact</h2>
     <p>We may update this policy as the Service evolves. Material changes will be reflected here with a new effective date.</p>
