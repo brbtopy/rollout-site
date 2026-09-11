@@ -48,7 +48,7 @@
       <li><strong>Location information:</strong> your device location to set pickups, match you with nearby drivers, and show the truck en route. When a driver goes online, we also collect their location in the background so they keep receiving nearby jobs while the app is closed or the screen is off.</li>
       <li><strong>Trip information:</strong> pickup and drop-off addresses, vehicle/truck type, status, and timestamps.</li>
       <li><strong>Driver information:</strong> for drivers, vehicle details, photos of your driver's licence (front and back), its number and expiry, and a photo of your truck — which our team reviews by hand to approve you.</li>
-      <li><strong>Device and usage information:</strong> basic app, device, and diagnostic data, including a push notification token, to keep the Service working, send trip updates, and stay secure.</li>
+      <li><strong>Device and usage information:</strong> basic app, device, and diagnostic data, including a push notification token and in-app activity such as screen views and key actions (see &ldquo;Analytics and diagnostics&rdquo; below), to keep the Service working, send trip updates, improve reliability, and stay secure.</li>
     </ul>
 
     <h2>How we use your location</h2>
@@ -62,9 +62,13 @@
     <h2>How information is shared</h2>
     <ul>
       <li><strong>With your driver or rider:</strong> the details needed to complete the tow. A rider sees their driver's name, photo, and phone number (so they can call them) and the truck's live location on the way; a driver sees the pickup and drop-off to reach you.</li>
-      <li><strong>With service providers</strong> who run the platform on our behalf — for example hosting and database (Supabase), maps and routing (Mapbox), push notification delivery (Expo and Google's Firebase Cloud Messaging), and crash and error reporting (Sentry). They may process data only to provide their service to us. We review driver documents ourselves rather than sending them to an outside identity-verification service.</li>
+      <li><strong>With service providers</strong> who run the platform on our behalf — for example hosting and database (Supabase), maps and routing (Mapbox), push notification delivery (Expo and Google's Firebase Cloud Messaging), crash, error and performance monitoring (Sentry), and product analytics (PostHog). They may process data only to provide their service to us. We review driver documents ourselves rather than sending them to an outside identity-verification service.</li>
       <li><strong>For legal reasons:</strong> where required by law or to protect rights, safety, and the integrity of the Service.</li>
     </ul>
+
+    <h2>Analytics and diagnostics</h2>
+    <p>To keep RollOut stable and to improve it, we collect information about how the app performs and how features are used — for example screen views and key actions like requesting a tow, getting a price, a driver accepting a job, and trips completing or being cancelled.</p>
+    <p>Crash and performance data is handled by Sentry, and product-usage analytics by PostHog. These events are tied only to your account identifier and your role (rider or driver) — never your name, phone number, email, or location. We use them to find and fix problems and to improve the Service, not to advertise to you.</p>
 
     <h2>Retention</h2>
     <p>We keep information for as long as your account is active or as needed to provide the Service, resolve disputes, and meet legal obligations.</p>
